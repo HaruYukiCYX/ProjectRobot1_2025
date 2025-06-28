@@ -60,6 +60,7 @@ record_hashes = []
 THRESHOLD = 80.5
 recog_flag = False
 
+//Function to convert characteristics to hashed codes
 def hash_feature_safe(feature):
     try:
         f_str = ",".join("{:.4f}".format(f) for f in feature)
